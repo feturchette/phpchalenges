@@ -1,0 +1,16 @@
+{
+    "require-dev":{
+        "phpunit/phpunit": "8.*"
+    },
+	
+    "autoload":{
+		
+        "psr-4": {
+            "src\\": "src",
+            "src\\Rules\\": "src/Rules",
+            "Test\\": "test",
+            "Test\\Rules\\": "test/Rules"
+	}
+    }
+
+}
