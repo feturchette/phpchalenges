@@ -6,11 +6,16 @@
 * Docker (optional if you have mysql db already set)
 
 # Install
-// Set up test database
+Install dependencies
+```shell
+$ composer install
+```
+
+Sets up test database
 ```shell
 $ docker-compose up -d
 ```
-This command should also create needed table and populate with needed data.
+This command should also create all needed table and needed data for testing.
 If needed, is possible to find the queries in db/queries.sql to run manually.
 
 Credentials for docker test db (already set on docker-compose.yml):
@@ -24,7 +29,7 @@ MYSQL_PASSWORD: 'challengepassword'
 $ ./vendor/bin/phpunit
 ```
 
-This command is used to run all the tests for the challenges.
+This command runs all the tests for the challenges.
 
 # Challenges
 
